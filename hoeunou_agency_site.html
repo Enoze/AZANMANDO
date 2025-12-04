@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOEUNOU AGENCY - Portfolio & Services</title>
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #222; }
+    header { background: linear-gradient(135deg, #0a0f24, #1a2b6d); color: white; padding: 40px 20px; text-align: center; }
+    nav { background: #111a3a; padding: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 16px; }
+    nav a:hover { color: #4f8bff; }
+    .hero { padding: 100px 20px; text-align: center; background: url('https://i.imgur.com/NcG5xkT.jpeg') center/cover no-repeat; color: white; }
+    .hero h1 { font-size: 48px; margin-bottom: 10px; text-shadow: 0 3px 10px rgba(0,0,0,0.5); }
+    .hero p { font-size: 20px; opacity: 0.9; }
+    .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: #1a2b6d; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0px 4px 12px rgba(0,0,0,0.1); transition: 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0px 8px 20px rgba(0,0,0,0.15); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-title { padding: 15px; font-weight: bold; font-size: 18px; color: #222; }
+    footer { background: #0a0f24; color: white; padding: 25px; text-align: center; margin-top: 40px; }
+    /* Animations */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .fade { animation: fadeIn 1.2s ease forwards; }
+    .fade-up { animation: fadeInUp 1s ease forwards; }
+  /* Animations */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .fade { animation: fadeIn 1.2s ease forwards; }
+    .fade-up { animation: fadeInUp 1s ease forwards; }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 { font-size: 28px; }
+      .hero { padding: 70px 20px; }
+      .hero h1 { font-size: 32px; }
+      nav a { margin: 0 10px; font-size: 14px; }
+      .section { padding: 40px 15px; }
+      .card img { height: 160px; }
+    }
+
+    @media (max-width: 480px) {
+      nav { padding: 10px; }
+      nav a { display: inline-block; margin: 8px; font-size: 13px; }
+      .hero { padding: 60px 15px; }
+      .hero h1 { font-size: 26px; }
+      .hero p { font-size: 15px; }
+      header img { width: 110px; }
+    }
+</style>
+</head>
+<body>
+  <header class="fade">
+    <img src="https://i.imgur.com/3G2a4KQ.png" alt="HOEUNOU AGENCY Logo" style="width:140px; margin-bottom:15px;" />
+    <h1>HOEUNOU AGENCY</h1>
+    <p>Création visuelle • Branding • Communication digitale</p>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Nous donnons vie à votre image</h1>
+    <p>Identité visuelle • Flyers • Logos • Contenu digital</p>
+  </section>
+
+  <section id="about" class="section fade-up" class="section">
+    <h2>À propos</h2>
+    <p>HOEUNOU AGENCY est spécialisée dans la création de visuels professionnels pour renforcer votre identité de marque. Nous accompagnons entreprises et entrepreneurs dans leur communication.</p>
+  </section>
+
+  <section id="services" class="section fade-up" class="section">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>Création de logos</li>
+      <li>Flyers et affiches</li>
+      <li>Montage graphique</li>
+      <li>Branding & identité visuelle</li>
+      <li>Design social media</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="section fade-up" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <img src="https://i.imgur.com/zf6X5Vc.jpeg" alt="Projet 1" />
+        <div class="card-title">Logo Professionnel</div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/6tQ6wGp.jpeg" alt="Projet 2" />
+        <div class="card-title">Flyer Publicitaire</div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/S5GkH3H.jpeg" alt="Projet 3" />
+        <div class="card-title">Design Réseaux Sociaux</div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/8R8PB8H.jpeg" alt="Projet 4" />
+        <div class="card-title">Affiche Événementielle</div>
+      </div>
+    </div>
+      <div class="card">Projet 2</div>
+      <div class="card">Projet 3</div>
+      <div class="card">Projet 4</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-up" class="section">
+    <h2>Contact</h2>
+    <p>Email : contact@hoeunouagency.com</p>
+    <p>Téléphone : +229 XX XX XX XX</p>
+  </section>
+
+  <footer>
+    <p>© 2025 HOEUNOU AGENCY — Tous droits réservés</p>
+  </footer>
+</body>
+</html>
